@@ -4,10 +4,10 @@ import os
 from datetime import datetime
 
 #spos local
-if sys.path[0].lower().rfind("\\spos") > 0:
-    path = sys.path[0][:sys.path[0].lower().rfind("\\spos")]
-    filepathConfig = f"{path}\\spos\\spos-config.json"
-    filepathDB = f"{path}\\spos\\spos-db.sqlite"
+if sys.path[0].lower().rfind("\\pwap") > 0:
+    path = sys.path[0][:sys.path[0].lower().rfind("\\pwap")]
+    filepathConfig = f"{path}\\pwap\\spos-config.json"
+    filepathDB = f"{path}\\pwap\\spos-db.sqlite"
     folderReports = f"{path}\\reports"
    
 #spos single file exe
