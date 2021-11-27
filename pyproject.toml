@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "spos"
+version = "0.1.0"
+description = ""
+authors = ["mmoosstt <moritz.ost@gmx.de>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pony = "^0.7.14"
+PySide2 = "^5.15.2"
+fastapi = "^0.63.0"
+uvicorn = "^0.13.2"
+aiofiles = "^0.6.0"
+python-docx = "^0.8.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pyinstaller = "^4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

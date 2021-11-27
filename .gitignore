@@ -1,0 +1,8 @@
+electron-quick-start
+node_modules/
+.project
+__pycache__
+*.sqlite
+*.json
+.venv
+.iigit
