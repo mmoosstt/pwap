@@ -1,5 +1,5 @@
 # pwap
-## Progressive Web Application Playground
+## Progressive Web Application Playground / PWA as executable
 This is a project to get in touch with progressiv web applications from a Python and VUE point of view.
 ![Context](overview.svg)
 
