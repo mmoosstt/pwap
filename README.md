@@ -6,9 +6,12 @@ this is a project to get in touch with progressiv web applications.
 
 ## setup python venv
 
-´´´
+```
     py -3 -m pip poetry
     py -3 -m venv .venv
     py -3 -m pip poetry
     py -3 -m poetry update
-´´´
+```
+
+## next nut
+How to insert javascript code into vue app via qt-webbrowser? Any Idea?
