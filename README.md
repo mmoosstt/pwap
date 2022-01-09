@@ -1,10 +1,9 @@
 # pwap
-Progressive Web Application Playground
+## Progressive Web Application Playground
+This is a project to get in touch with progressiv web applications from a Python and VUE point of view.
+![Context](overview.svg)
 
-this is a project to get in touch with progressiv web applications.
-(webbrowser (python/pyside2) <-> vue (website/client) <-> server (python/flask/REST)) -shipped-> exe (PyInstaller)
-
-## setup python venv
+## Setup Python venv
 
 ```
     py -3 -m pip poetry
@@ -12,6 +11,6 @@ this is a project to get in touch with progressiv web applications.
     py -3 -m pip poetry
     py -3 -m poetry update
 ```
-
-## next nut
-How to insert javascript code into vue app via qt-webbrowser? Any Idea?
+## Next nuts
+- How to insert javascript code into vue app via qt-webbrowser? Any Idea?
+- ...
