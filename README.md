@@ -1,14 +1,14 @@
-# pwap
-## Progressive Web Application Playground / PWA as executable
+# Progressive Web Application Playground / PWA as executable
+
 This is a project to get in touch with progressiv web applications from a Python and VUE point of view.
 ![Context](overview.svg)
 
 ## Setup Python venv
 ```
-    py -3 -m pip poetry
-    py -3 -m venv .venv
-    py -3 -m pip poetry
+    py -3 -m pip install poetry
+    py -3.9 -m venv .venv
     py -3 -m poetry update
+    py -3 -m pip freeze > requirements.txt
 ```
 
 ## Cracked nuts
