@@ -13,7 +13,8 @@ This is a project to get in touch with progressiv web applications from a Python
 
 ## Create Executable
 ```
-    .\.venv\Scripts\pyinstaller.exe .\release\SposOneDir.spec
+    .\.venv\Scripts\pyinstaller.exe .\release\SposOneFile.spec (application will be build)
+    .\dist\SPOS.exe (application should start)
 ```
 
 ## Cracked nuts
