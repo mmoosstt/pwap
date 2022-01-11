@@ -93,13 +93,13 @@ export default {
     },
     callMe(){
       console.log(this.$store.getters["getSchoolTree"])
-      this.$store.dispatch("addSchool", {name: "School"}).then((school) => {
+      this.$store.dispatch("school/updateSchool", {name: "School"}).then((school) => {
         console.log(school)
-        this.$store.dispatch("addSchoolClass", {schoolId:school.id, name:"SchoolClass"}).then((schoolClass)=>{
+        this.$store.dispatch("school/updateSchoolClass", {schoolId:school.id, name:"SchoolClass"}).then((schoolClass)=>{
           console.log(schoolClass)
-          this.$store.dispatch("addPupil",{schoolClassId:schoolClass.id, givenName:"givenName", familyName:"familyName"}).then((pupil)=>{
+          this.$store.dispatch("school/updatePupil",{schoolClassId:schoolClass.id, givenName:"givenName", familyName:"familyName"}).then((pupil)=>{
             console.log(pupil)
-            this.$store.dispatch("addPupilValuationSet", {pupilId:pupil.id}).then((pupilValuationSet)=>{
+            this.$store.dispatch("school/updatePupilValuationSet", {pupilId:pupil.id}).then((pupilValuationSet)=>{
               console.log(pupilValuationSet)
             })
           })

@@ -17,7 +17,7 @@
               <v-container>
                   <v-row dense>
                   <v-col cols="auto">
-                  <v-btn x-small color="light green" fab v-on:click="addSchool()"><v-icon>mdi-plus</v-icon></v-btn>
+                  <v-btn x-small color="light green" fab v-on:click="addSchoolMethode($item)"><v-icon>mdi-plus</v-icon></v-btn>
                   </v-col>
                   <v-col>
                   {{$t('addSchool')}}
@@ -63,10 +63,12 @@ export default {
     changed(school){
       SchoolClient.schoolPut(school);
     },
-    addSchool(){
+    addSchoolMethode(item){
+      console.log("addSchoolMethode", item)
       this.$store.commit('set_id', this.$store.getters.get_id +1);
       this.$data.default.school.id = this.$store.getters.get_id;
-      this.$store.commit("addSchool", JSON.parse(JSON.stringify(this.$data.default.school)));
+      console.log("debug", this.$data.default.school);
+      this.$store.dispatch("school/updateSchool", "new-school-added");
       },
     removeSchool(school)
     {
